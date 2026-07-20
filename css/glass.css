@@ -1,0 +1,76 @@
+/* =====================
+   VALTO LIQUID GLASS
+===================== */
+
+
+body {
+    background:
+    radial-gradient(circle at top left, #4f46e5, transparent 35%),
+    radial-gradient(circle at bottom right, #06b6d4, transparent 35%),
+    #050816;
+
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/* стеклянная поверхность */
+
+.glass {
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,0.35);
+
+}
+
+
+/* плавное появление */
+
+.fade-in {
+
+    animation: fadeIn .6s ease;
+
+}
+
+
+@keyframes fadeIn {
+
+    from {
+        opacity:0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* кнопки */
+
+button,
+.btn {
+
+    transition: .3s ease;
+
+}
+
+
+button:hover,
+.btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 10px 30px rgba(99,102,241,.5);
+
+}
