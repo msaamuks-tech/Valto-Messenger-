@@ -1,17 +1,7 @@
-document.querySelectorAll(".chat").forEach(chat => {
+const username = localStorage.getItem("username");
 
-    chat.addEventListener("touchstart", () => {
-        chat.classList.add("active");
-    });
+const welcome = document.getElementById("welcome");
 
-    chat.addEventListener("touchend", () => {
-        setTimeout(() => {
-            chat.classList.remove("active");
-        }, 120);
-    });
-
-    chat.addEventListener("touchcancel", () => {
-        chat.classList.remove("active");
-    });
-
-});
+if (username) {
+    welcome.textContent = "Привет, " + username + " 👋";
+}
