@@ -487,3 +487,107 @@ footer button{
     opacity:.6;
 
 }
+/* =========================
+   VALTO INPUT BAR
+========================= */
+
+
+.composer{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px;
+
+    margin:10px;
+
+    border-radius:30px;
+
+    background:#111620;
+
+}
+
+
+
+.composer input{
+
+    flex:1;
+
+    height:50px;
+
+    background:#202634;
+
+    border:none;
+
+    outline:none;
+
+    color:white;
+
+    padding:0 18px;
+
+    border-radius:25px;
+
+    font-size:16px;
+
+}
+
+
+
+.composer input::placeholder{
+
+    color:#AAB3C5;
+
+}
+
+
+
+.composer .icon{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#202634;
+
+    color:white;
+
+    font-size:20px;
+
+}
+
+
+
+.composer .send{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#4F7CFF;
+
+    color:white;
+
+    font-size:22px;
+
+    transition:.25s;
+
+}
+
+
+
+.composer .send:active{
+
+    transform:scale(.85);
+
+}
