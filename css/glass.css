@@ -83,10 +83,12 @@ button:hover,
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    filter: blur(80px);
+    filter: blur(120px);
     opacity: .45;
     z-index: -1;
     animation: floatOrb 12s infinite alternate ease-in-out;
+   mix-blend-mode: screen;
+pointer-events: none;
 }
 
 
