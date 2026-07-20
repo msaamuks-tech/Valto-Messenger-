@@ -18,7 +18,10 @@
 
 
 <div class="app">
-
+<script>
+const params = new URLSearchParams(window.location.search);
+const user = params.get("user") || "Alex";
+</script>
 
 <aside class="sidebar">
 
@@ -34,7 +37,7 @@ Valto
 <div class="chat-list">
 
 
-<div class="chat-item active">
+<div class="chat-item active" id="currentChat">
 
 <div class="avatar">
 A
@@ -219,7 +222,28 @@ Alex
 
 
 </div>
+  <script src="js/chat.js"></script>
+<script>
+const current = document.getElementById("currentChat");
 
+if (user === "Max") {
+  current.querySelector("h3").textContent = "Max";
+  current.querySelector("p").textContent = "Как дела?";
+  current.querySelector(".avatar").textContent = "M";
+}
+
+if (user === "Diana") {
+  current.querySelector("h3").textContent = "Diana";
+  current.querySelector("p").textContent = "Фото 📷";
+  current.querySelector(".avatar").textContent = "D";
+}
+
+if (user === "Alex") {
+  current.querySelector("h3").textContent = "Alex";
+  current.querySelector("p").textContent = "Привет 👋";
+  current.querySelector(".avatar").textContent = "A";
+}
+</script>
 
 </body>
 
