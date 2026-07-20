@@ -598,35 +598,38 @@ footer button{
 
 .glass{
 
-    background:
+background:
 
-    linear-gradient(
-        135deg,
-        rgba(255,255,255,0.15),
-        rgba(255,255,255,0.05)
-    );
-
-
-    backdrop-filter:
-
-    blur(25px)
-    saturate(180%);
+linear-gradient(
+135deg,
+rgba(255,255,255,0.12),
+rgba(255,255,255,0.04)
+);
 
 
-    -webkit-backdrop-filter:
+backdrop-filter:
 
-    blur(25px)
-    saturate(180%);
-
-
-    border:
-
-    1px solid rgba(255,255,255,.15);
+blur(35px)
+saturate(160%);
 
 
-    box-shadow:
+-webkit-backdrop-filter:
 
-    0 10px 40px rgba(0,0,0,.35);
+blur(35px)
+saturate(160%);
+
+
+border:
+
+1px solid rgba(255,255,255,.12);
+
+
+box-shadow:
+
+0 15px 50px rgba(0,0,0,.35),
+
+inset 0 0 25px rgba(255,255,255,.06);
+
 
 }
 .glass{
