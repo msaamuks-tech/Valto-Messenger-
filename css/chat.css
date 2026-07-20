@@ -591,3 +591,41 @@ footer button{
     transform:scale(.85);
 
 }
+/* =====================
+   VALTO LIQUID GLASS
+===================== */
+
+
+.glass{
+
+    background:
+
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,0.15),
+        rgba(255,255,255,0.05)
+    );
+
+
+    backdrop-filter:
+
+    blur(25px)
+    saturate(180%);
+
+
+    -webkit-backdrop-filter:
+
+    blur(25px)
+    saturate(180%);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+    box-shadow:
+
+    0 10px 40px rgba(0,0,0,.35);
+
+}
