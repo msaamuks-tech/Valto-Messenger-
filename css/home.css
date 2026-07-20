@@ -450,3 +450,10 @@ transform:translate(0,0) scale(1);
     }
 
 }
+body{
+    transition: opacity .25s ease;
+}
+
+body.page-out{
+    opacity:0;
+}
