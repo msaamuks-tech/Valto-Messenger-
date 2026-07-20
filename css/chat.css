@@ -430,3 +430,60 @@ footer button{
 
 
 }
+/* VALTO MESSAGE ALIGN */
+
+
+.message{
+
+    width:fit-content;
+
+    max-width:75%;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.incoming{
+
+    margin-right:auto;
+
+    background:#202634;
+
+    border-bottom-left-radius:5px;
+
+}
+
+
+
+.outgoing{
+
+    margin-left:auto;
+
+    background:#4F7CFF;
+
+    border-bottom-right-radius:5px;
+
+}
+
+
+
+.message p{
+
+    margin-bottom:5px;
+
+}
+
+
+.message span{
+
+    display:block;
+
+    text-align:right;
+
+    font-size:12px;
+
+    opacity:.6;
+
+}
