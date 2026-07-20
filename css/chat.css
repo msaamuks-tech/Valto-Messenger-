@@ -644,34 +644,46 @@ inset 0 0 25px rgba(255,255,255,.06);
 .glass::before{
 
 
-    content:"";
+content:"";
 
 
-    position:absolute;
-
-    top:-50%;
-
-    left:-80%;
+position:absolute;
 
 
-    width:60%;
+top:-60%;
 
-    height:200%;
-
-
-    background:
-
-    linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,.25),
-        transparent
-    );
+left:-100%;
 
 
-    animation:
+width:70%;
 
-    glassMove 6s infinite;
+height:220%;
+
+
+
+background:
+
+linear-gradient(
+
+120deg,
+
+transparent,
+
+rgba(255,255,255,.12),
+
+transparent
+
+);
+
+
+
+animation:
+
+glassMove 10s infinite;
+
+
+
+pointer-events:none;
 
 
 }
@@ -683,14 +695,25 @@ inset 0 0 25px rgba(255,255,255,.06);
 
 0%{
 
-    transform:translateX(-100%);
+transform:translateX(-120%) rotate(25deg);
+
+opacity:0;
+
+}
+
+
+30%{
+
+opacity:1;
 
 }
 
 
 100%{
 
-    transform:translateX(300%);
+transform:translateX(300%) rotate(25deg);
+
+opacity:0;
 
 }
 
