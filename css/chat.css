@@ -773,3 +773,110 @@ inset 0 0 35px rgba(255,255,255,.08);
 
 
 }
+/* =====================
+   VALTO LIQUID CHAT
+===================== */
+
+
+/* верхний контакт */
+
+.chat-item.active {
+
+    background: rgba(255,255,255,.08);
+
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.35);
+
+    animation: glassShow .6s ease;
+}
+
+
+
+/* аватар */
+
+.avatar {
+
+    background:
+    linear-gradient(
+    135deg,
+    #38bdf8,
+    #2563eb
+    );
+
+    box-shadow:
+    0 0 30px rgba(56,189,248,.5);
+
+}
+
+
+
+/* нижняя панель */
+
+.composer {
+
+    background:
+    rgba(255,255,255,.10)!important;
+
+    border:
+    1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:
+    blur(30px);
+
+    -webkit-backdrop-filter:
+    blur(30px);
+
+}
+
+
+
+/* кнопки смайла и скрепки */
+
+.icon {
+
+    background:
+    rgba(255,255,255,.08);
+
+    border:
+    1px solid rgba(255,255,255,.12);
+
+    transition:.3s;
+
+}
+
+
+.icon:hover {
+
+    transform:scale(1.1);
+
+    box-shadow:
+    0 0 25px #38bdf8;
+
+}
+
+
+
+/* появление */
+
+@keyframes glassShow {
+
+from {
+
+opacity:0;
+transform:translateY(-20px);
+
+}
+
+to {
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
