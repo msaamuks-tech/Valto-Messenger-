@@ -198,7 +198,10 @@ body{
     display:flex;
 
     align-items:center;
-
+    
+    transition:.25s ease;
+    cursor:pointer;
+    
     gap:15px;
 
     padding:16px;
