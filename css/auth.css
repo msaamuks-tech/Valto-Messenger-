@@ -190,3 +190,23 @@ color:#00D4FF;
 text-decoration:none;
 
 }
+input::placeholder{
+    color:#7f8aa3;
+}
+
+
+button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 10px 30px rgba(79,124,255,.4);
+
+}
+
+
+button{
+
+transition:.3s;
+
+}
