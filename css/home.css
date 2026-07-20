@@ -362,3 +362,18 @@ body{
         0 0 25px rgba(79,124,255,.35);
 
 }
+.chat:hover{
+
+    transform:translateY(-4px) scale(1.01);
+
+    background:rgba(255,255,255,.06);
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,.25);
+
+}
+.chat:active{
+
+    transform:scale(.98);
+
+}
