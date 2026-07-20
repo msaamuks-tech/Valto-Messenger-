@@ -716,3 +716,60 @@ word-wrap:break-word;
 overflow-wrap:break-word;
 
 }
+/* =====================
+   VALTO GLASS GLOW
+===================== */
+
+
+.glass{
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,.45),
+
+    0 0 40px rgba(79,124,255,.15),
+
+    inset 0 0 30px rgba(255,255,255,.05);
+
+}
+.glass{
+
+animation: glassGlow 8s infinite alternate;
+
+}
+
+
+
+@keyframes glassGlow{
+
+
+0%{
+
+box-shadow:
+
+0 20px 60px rgba(0,0,0,.45),
+
+0 0 30px rgba(79,124,255,.10),
+
+inset 0 0 30px rgba(255,255,255,.05);
+
+}
+
+
+
+100%{
+
+
+box-shadow:
+
+0 20px 60px rgba(0,0,0,.45),
+
+0 0 50px rgba(79,124,255,.25),
+
+inset 0 0 35px rgba(255,255,255,.08);
+
+
+}
+
+
+}
