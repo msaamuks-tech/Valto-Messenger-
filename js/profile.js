@@ -6,6 +6,11 @@ document.getElementById("profileName").textContent = username || "Гость";
 
 document.getElementById("profileEmail").textContent = email || "Нет email";
 
+const profileTitle = document.getElementById("profileTitle");
+
+if (profileTitle) {
+    profileTitle.textContent = username;
+}
 
 document.getElementById("logout").addEventListener("click", function(){
 
