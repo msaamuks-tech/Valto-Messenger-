@@ -629,3 +629,67 @@ footer button{
     0 10px 40px rgba(0,0,0,.35);
 
 }
+.glass{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.glass::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+    top:-50%;
+
+    left:-80%;
+
+
+    width:60%;
+
+    height:200%;
+
+
+    background:
+
+    linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
+
+
+    animation:
+
+    glassMove 6s infinite;
+
+
+}
+
+
+
+@keyframes glassMove{
+
+
+0%{
+
+    transform:translateX(-100%);
+
+}
+
+
+100%{
+
+    transform:translateX(300%);
+
+}
+
+
+}
