@@ -643,48 +643,36 @@ inset 0 0 25px rgba(255,255,255,.06);
 
 .glass::before{
 
-
 content:"";
-
 
 position:absolute;
 
+top:-80%;
 
-top:-60%;
-
-left:-100%;
+left:-120%;
 
 
-width:70%;
+width:45%;
 
-height:220%;
-
+height:250%;
 
 
 background:
 
 linear-gradient(
-
 120deg,
-
 transparent,
-
-rgba(255,255,255,.12),
-
+rgba(255,255,255,.08),
 transparent
-
 );
-
 
 
 animation:
 
-glassMove 10s infinite;
-
+glassMove 12s infinite;
 
 
 pointer-events:none;
-
 
 }
 
@@ -695,23 +683,23 @@ pointer-events:none;
 
 0%{
 
-transform:translateX(-120%) rotate(25deg);
+transform:translateX(-150%) rotate(25deg);
 
 opacity:0;
 
 }
 
 
-30%{
+40%{
 
-opacity:1;
+opacity:.7;
 
 }
 
 
 100%{
 
-transform:translateX(300%) rotate(25deg);
+transform:translateX(350%) rotate(25deg);
 
 opacity:0;
 
