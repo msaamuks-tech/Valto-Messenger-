@@ -74,3 +74,58 @@ button:hover,
     0 10px 30px rgba(99,102,241,.5);
 
 }
+/* =====================
+   LIQUID GLASS ORBS
+===================== */
+
+.background-orb {
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: .45;
+    z-index: -1;
+    animation: floatOrb 12s infinite alternate ease-in-out;
+}
+
+
+.orb1 {
+    background: #4f46e5;
+    top: -120px;
+    left: -120px;
+}
+
+
+.orb2 {
+    background: #06b6d4;
+    bottom: -120px;
+    right: -120px;
+    animation-delay: 3s;
+}
+
+
+@keyframes floatOrb {
+
+    from {
+        transform: translate(0,0) scale(1);
+    }
+
+    to {
+        transform: translate(80px,50px) scale(1.2);
+    }
+
+}
+
+
+/* стеклянное движение */
+
+.glass:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,.45),
+    inset 0 0 30px rgba(255,255,255,.08);
+
+}
