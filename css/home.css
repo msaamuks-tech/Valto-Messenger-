@@ -188,7 +188,11 @@ body{
     margin:auto;
 
     margin-bottom:8px;
+transition: transform .3s ease;
+}
 
+.chat:hover .avatar{
+    transform: scale(1.08);
 }
 
 /* ---------- Чаты ---------- */
@@ -199,7 +203,7 @@ body{
 
     align-items:center;
     
-    transition:.25s ease;
+    transition: transform .25s ease, background .25s ease;
     cursor:pointer;
     
     gap:15px;
@@ -215,8 +219,6 @@ body{
     backdrop-filter:blur(25px);
 
     -webkit-backdrop-filter:blur(25px);
-
-    transition:.25s;
 
 }
 
