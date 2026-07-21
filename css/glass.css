@@ -60,7 +60,9 @@ body {
 button,
 .btn {
 
-    transition: .3s ease;
+    transition:
+transform .35s cubic-bezier(.34,1.56,.64,1),
+box-shadow .35s ease;
 
 }
 
@@ -114,8 +116,13 @@ pointer-events: none;
     }
 
     to {
-        transform: translate(80px,50px) scale(1.2);
-    }
+
+transform:
+translate(80px,50px)
+scale(1.25)
+rotate(15deg);
+
+}
 
 }
 
@@ -129,5 +136,64 @@ pointer-events: none;
     box-shadow:
     0 30px 80px rgba(0,0,0,.45),
     inset 0 0 30px rgba(255,255,255,.08);
+
+}
+/* =====================
+   VALTO LIQUID REFLECTION
+===================== */
+
+
+.glass {
+    position:relative;
+    overflow:hidden;
+}
+
+
+.glass::before {
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:
+    linear-gradient(
+        120deg,
+        rgba(255,255,255,.28),
+        transparent 35%
+    );
+
+
+    opacity:.35;
+
+    pointer-events:none;
+
+
+    animation:
+    glassLight 8s infinite alternate;
+
+}
+
+
+
+@keyframes glassLight {
+
+
+    from {
+
+        transform:
+        translateX(-30%);
+
+    }
+
+
+    to {
+
+        transform:
+        translateX(30%);
+
+    }
 
 }
