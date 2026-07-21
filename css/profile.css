@@ -292,60 +292,40 @@ transform:translateY(0);
 
 }
 .profile-card::before {
+  content:"";
 
-content:"";
+  position:absolute;
+  inset:-50%;
 
-position:absolute;
+  background:linear-gradient(
+    120deg,
+    transparent 35%,
+    rgba(255,255,255,.12),
+    transparent 65%
+  );
 
-top:-50%;
-left:-50%;
+  transform:translateX(-100%) rotate(25deg);
 
-width:200%;
-height:200%;
+  animation:glassMove 8s infinite ease-in-out;
 
-
-background:
-linear-gradient(
-120deg,
-transparent 40%,
-rgba(255,255,255,.18),
-transparent 60%
-);
-
-
-transform:
-rotate(25deg);
-
-
-animation:
-glassMove 8s infinite;
-
-
-pointer-events:none;
-
+  pointer-events:none;
 }
 
 
 
 @keyframes glassMove {
 
+  0% {
+    transform:translateX(-120%) rotate(25deg);
+  }
 
-0% {
+  50% {
+    transform:translateX(120%) rotate(25deg);
+  }
 
-transform:
-translateX(-80%)
-rotate(25deg);
-
-}
-
-
-100% {
-
-transform:
-translateX(80%)
-rotate(25deg);
-
-}
+  100% {
+    transform:translateX(120%) rotate(25deg);
+  }
 
 }
 .avatar::after {
