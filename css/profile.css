@@ -51,7 +51,7 @@ opacity:.25;
 
 position:relative;
 
-width:360px;
+width:340px;
 
 padding:40px;
 
@@ -124,6 +124,8 @@ box-shadow:
 margin-bottom:25px;
 animation:
 avatarFloat 5s infinite alternate ease;
+  position:relative;
+overflow:hidden;
 }
 
 
@@ -290,6 +292,114 @@ to{
 
 transform:
 translateY(-8px);
+
+}
+
+
+}
+.profile-card::before {
+
+content:"";
+
+position:absolute;
+
+top:-50%;
+left:-50%;
+
+width:200%;
+height:200%;
+
+
+background:
+linear-gradient(
+120deg,
+transparent 40%,
+rgba(255,255,255,.18),
+transparent 60%
+);
+
+
+transform:
+rotate(25deg);
+
+
+animation:
+glassMove 8s infinite;
+
+
+pointer-events:none;
+
+}
+
+
+
+@keyframes glassMove {
+
+
+0% {
+
+transform:
+translateX(-80%)
+rotate(25deg);
+
+}
+
+
+100% {
+
+transform:
+translateX(80%)
+rotate(25deg);
+
+}
+
+}
+.avatar::after {
+
+
+content:"";
+
+
+position:absolute;
+
+
+inset:-4px;
+
+
+border-radius:50%;
+
+
+border:
+2px solid rgba(255,255,255,.5);
+
+
+animation:
+avatarRing 4s infinite;
+
+
+}
+
+
+
+@keyframes avatarRing {
+
+
+0% {
+
+transform:
+scale(.9);
+
+opacity:.5;
+
+}
+
+
+100% {
+
+transform:
+scale(1.2);
+
+opacity:0;
 
 }
 
