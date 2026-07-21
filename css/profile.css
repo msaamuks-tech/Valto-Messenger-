@@ -55,15 +55,37 @@ width:360px;
 
 padding:40px;
 
-background:rgba(255,255,255,.08);
+background:
+rgba(255,255,255,.08);
 
-backdrop-filter:blur(25px);
+backdrop-filter:
+blur(35px);
+
+-webkit-backdrop-filter:
+blur(35px);
+
 
 border-radius:32px;
 
 text-align:center;
 
-border:1px solid rgba(255,255,255,.1);
+
+border:
+1px solid rgba(255,255,255,.18);
+
+
+box-shadow:
+
+0 25px 80px rgba(0,0,0,.45),
+
+inset 0 0 40px rgba(255,255,255,.05);
+
+
+overflow:hidden;
+
+
+animation:
+profileShow .7s ease;
 
 }
 
@@ -95,10 +117,13 @@ font-size:55px;
 
 font-weight:800;
 
-box-shadow:0 0 40px #4F7CFF;
+box-shadow:
+0 0 40px #4F7CFF,
+0 0 80px rgba(0,212,255,.5);
 
 margin-bottom:25px;
-
+animation:
+avatarFloat 5s infinite alternate ease;
 }
 
 
@@ -188,9 +213,23 @@ color:white;
 font-weight:700;
 
 font-size:15px;
+transition:
+transform .35s cubic-bezier(.34,1.56,.64,1),
+box-shadow .35s ease;
+
+cursor:pointer;
+}
+button:hover{
+
+transform:
+translateY(-4px);
+
+
+box-shadow:
+
+0 15px 35px rgba(79,124,255,.45);
 
 }
-
 
 
 button.dark{
@@ -210,5 +249,49 @@ margin-top:25px;
 color:#AAB3C5;
 
 text-decoration:none;
+
+}
+@keyframes profileShow {
+
+from {
+
+opacity:0;
+
+transform:
+translateY(40px)
+scale(.95);
+
+}
+
+
+to {
+
+opacity:1;
+
+transform:
+translateY(0)
+scale(1);
+
+}
+
+}
+@keyframes avatarFloat {
+
+
+from{
+
+transform:
+translateY(0);
+
+}
+
+
+to{
+
+transform:
+translateY(-8px);
+
+}
+
 
 }
